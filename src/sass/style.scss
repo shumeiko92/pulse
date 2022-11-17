@@ -1,0 +1,16 @@
+@import 'base/variables';
+* {
+    font-family:'Museo Moderno', sans-serif;
+}
+.container{
+    width: 950px;
+    margin: 0 auto;
+}
+@import 'block/promo';
+@import 'block/header';
+@import 'block/button';
+@import 'block/benefits';
+@import 'block/title';
+@import 'block/consultation';
+@import 'block/forms';
+@import 'block/carousel';
