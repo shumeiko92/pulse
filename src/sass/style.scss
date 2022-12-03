@@ -1,11 +1,11 @@
 @import 'base/variables';
-@import 'base/media';
+
 * {
     font-family:'Museo Moderno', sans-serif;
 }
 .container{
-    width: 950px;
-    margin: 0 auto;
+     width: 950px;
+     margin: 0 auto;
 }
 @import 'block/promo';
 @import 'block/header';
@@ -15,3 +15,9 @@
 @import 'block/consultation';
 @import 'block/forms';
 @import 'block/carousel';
+@import 'block/catalog';
+@import 'block/feed';
+@import 'block/footer';
+@import 'block/modal';
+
+@import 'base/media';

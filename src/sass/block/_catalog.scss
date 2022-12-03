@@ -1,0 +1,183 @@
+.catalog{
+    padding-bottom: 80px;
+    &__tabs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        margin-top: 50px;
+
+    }
+    &__tab{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #D0D0D0;
+        width: 223px;
+        height: 52px;
+        list-style-type: none;
+        transform: skewX(-25deg);
+        font-weight: 400;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #6B6B6B;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover{
+            box-shadow: 3px 3px 20px $main_color;
+            border: none;
+            transform: skewX(-25deg) scale(1.05);
+        }
+        div{
+            transform: skewX(25deg);
+        }
+        &_active{
+            background-color: $main_color;
+            color: #fff;
+            border: none;
+
+        }
+    }
+    &__content{
+        margin-top: 60px;
+        display: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &_active{
+            display: flex;
+        }
+    }   
+    &-item{
+        width: 300px;
+        min-height: 440px;
+        background: #FFFFFF;
+        border: 2px solid #E8E8E8;
+        margin-bottom: 23px;
+        overflow: hidden;
+        &__wrapper{
+            position: relative;
+            display: flex;
+            width: 200%;
+        }
+        &__content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            column-gap: 15px;
+            padding: 20px 0;
+            transform: translateX(-100%);
+            transition: 0.5s;
+            &_active{
+                transform: translateX(0%);
+            }
+        }
+        &__img{
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: 200px;
+
+        }    
+        &__subtitle{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 25px;
+            color: #0D0D0D;
+            margin-top: 10px;
+        }
+        &__descr{
+            font-weight: 300;
+            font-size: 14px;
+            text-align: center;
+            color: #0D0D0D;
+            margin-top: 10px;
+        }
+        &__link{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 14px;
+            text-decoration-line: underline;
+            color: $main_color;
+            margin-top: 10px;
+            &:hover{
+                color: $main-color;
+            }
+        }
+        hr{
+            display: block;
+            margin: 0 auto;
+            margin-top: 17px;
+            height: 2px;
+            width: 263px;
+            background: #E8E8E8;
+            
+        }
+
+        &__list{
+            position: relative;
+            padding: 16px 15px 20px 32px;
+            width: 50%;
+            font-weight: 300;
+            font-size: 14px;
+            color: #555555;
+            transform: translateX(0%);
+            list-style-type: none;
+            transition: 0.5s;
+            &_active{
+                transform: translateX(-100%);
+            }
+                li{
+                position: relative;
+                margin-bottom: 20px;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    background-color: $main-color;
+                    left: -14px;
+                    top: 7px;
+                    
+                }
+            }
+            
+        }
+        &__back{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: 500;
+            bottom: 0;
+            font-size: 14px;
+            line-height: 14px;
+            text-decoration-line: underline;
+            color: $main_color;
+            display: block;
+            margin-top: 35px;
+            &:hover{
+                color: $main-color;
+            }
+        }
+        &__footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 17px;
+            padding: 0 18px 0 23px;
+        }
+        &__old-price{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 14px;
+            text-decoration-line: line-through;
+            color: #555555;
+        }
+        &__new-price{
+            font-weight: 700;
+                font-size: 20px;
+                line-height: 20px;
+                color: #050505;
+        }
+    }
+}
