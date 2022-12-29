@@ -180,6 +180,9 @@
         }
         &__item{
             width: 240px;
+            img{
+                margin-top: 10px;
+            }
         }
         &__descr{
             text-align: center;
@@ -237,7 +240,6 @@
         padding: 20px;
     }
     .feed-form{
-        margin-left: 23px;
         input{
             width: 88%;
         }
